@@ -1,0 +1,22 @@
+#hair{
+    /* position: absolute; */
+    height: 100%;
+}
+
+.hair-ball {
+    background: black;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.glass {
+    background: white;
+    border-radius: 35%;
+    position: fixed;
+}
+
+.eye-ball {
+    background: green;
+    border-radius: 50%;
+    position: fixed;
+}

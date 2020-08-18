@@ -10,4 +10,9 @@ $(document).ready(function() {
     generateGlasses(resolution_width, resolution_height);
     generateEyes();
 
+    function show_resolution(width, height) {
+        $("#resolution-text").text(width + " x " + height);
+    }
+    show_resolution(resolution_width, resolution_height);
+
 });

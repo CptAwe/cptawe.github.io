@@ -55,8 +55,9 @@ function generateGlasses(width, height) {
         */
 
         let glass_elem_temp = glass_elem;
-        let width = parseInt(glass_elem.css("width").replace(/[^-\d\.]/g, '')) - size_difference / 2;
-        let height = parseInt(glass_elem.css("height").replace(/[^-\d\.]/g, '')) - size_difference / 2;
+        let width = parseInt(glass_elem.css("width").replace(/[^-\d\.]/g, '')) - 2 * size_difference / 3;
+        let height = parseInt(glass_elem.css("height").replace(/[^-\d\.]/g, '')) - 2 * size_difference / 3;
+        
         let left = parseInt(glass_elem.css("left").replace(/[^-\d\.]/g, '')) + size_difference / 2;
         let bottom = parseInt(glass_elem.css("bottom").replace(/[^-\d\.]/g, '')) + size_difference / 2;
 

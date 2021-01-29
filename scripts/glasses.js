@@ -72,8 +72,13 @@ function generateGlasses(width, height) {
         return glass_elem_temp;
     }
 
+    function removeGlasses() {
+        $(".glass").remove();
+    }
+
     let glass_temp = $($("#glasses-template").clone().html());
 
+    removeGlasses();
     for (let i = 0; i < glasses.length; i++) {
         let glass_ = modglass(glass_temp.clone(), glasses[i]);
         let glass_opp = oppositeGlass(glass_.clone(), glasses_frame_width);

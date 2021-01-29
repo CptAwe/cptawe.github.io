@@ -39,6 +39,10 @@ function generateHair(width, height) {
         return hair_elem_temp;
     }
 
+    function removeHair() {
+        $(".hair-ball").remove();
+    }
+    removeHair();
 
     let hair_temp = $($("#hair-template").clone().html());
 

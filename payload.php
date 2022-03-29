@@ -1,21 +1,32 @@
+<!DOCTYPE html>
 <html>
-<body>
+      
+<head>
+    <title>
+        Payload
+    </title>
+</head>
+  
+<body style="text-align:center;">
+      
+    <?php
+        if(array_key_exists('cmd_button', $_POST)) {
+            butt();
+        }
+        function butt() {
 
-<script>
-    alert(1);
-</script>
+            // echo $_GET["cmd"];
+            // $output = exec($command);
 
-Hello! 
-<?php
+            echo "The button was pressed!";
+        }
+    ?>
 
-echo $_GET["cmd"];
-
-$output = exec($command);
-
-
-echo $output;
-
-?>
-
-</body>
+    <form method="post">
+        <label for="cmd_input">Command: </label><input type="text" id="cmd_input">
+        <input type="submit" name="cmd_button" class="button" value="Go!" />
+    </form>
+</head>
+  
 </html>
+

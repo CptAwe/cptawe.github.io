@@ -1,6 +1,10 @@
 <html>
 <body>
 
+<script>
+    alert(1);
+</script>
+
 Hello! 
 <?php
 

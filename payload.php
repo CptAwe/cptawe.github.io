@@ -8,14 +8,6 @@
 </head>
   
 <body style="text-align:center;">
-    
-
-
-    <form action="welcome.php" method="post">
-    Name: <input type="text" name="name"><br>
-    E-mail: <input type="text" name="email"><br>
-    <input type="submit">
-    </form>
 
     <?php
         if(array_key_exists('cmd_button', $_POST)) {
@@ -23,7 +15,7 @@
         }
         function butt() {
 
-            echo $_POST["cmd"];
+            echo $_POST["cmd_input"];
             $output = exec($command);
 
             echo $output;

